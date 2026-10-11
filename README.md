@@ -1,78 +1,21 @@
-# Text Mining on ChatGPT Discourse — Sentiment & Topic Analysis
+# Text Mining on ChatGPT Discourse — Historical Coursework Summary
 
-**Course:** CIS 3252 — Business Intelligence  
-**Institution:** Cal Poly Pomona  
-**Term:** Spring 2026  
+**Status:** This repository currently contains **only a written analysis summary**. There are no raw or sanitized datasets, notebooks, preprocessing scripts, charts, model outputs, or reproducible validation files committed here.
 
-## Overview
+## Research described in the existing project notes
 
-This project applies **text mining techniques** to analyze public discourse about ChatGPT on the **Bluesky** social platform. Using sentiment analysis and LDA topic modeling, it identifies patterns in public perception and translates them into actionable business intelligence insights.
+The historical write-up describes an academic exploration of ChatGPT-related posts on Bluesky, with questions about sentiment, negative reactions, topical clusters, and implications for technology companies. The described methods include text preprocessing, sentiment classification, and Latent Dirichlet Allocation (LDA) topic modeling.
 
-## Research Questions
+These remain **documented research claims, not independently checkable findings from the contents of this repository**.
 
-1. What is the overall public sentiment toward ChatGPT on Bluesky?
-2. What drives negative sentiment?
-3. What are the dominant topics in ChatGPT-related discussions?
-4. How can a technology company use these insights strategically?
+## Evidence limitations
 
-## Dataset
+Earlier descriptions included precise sentiment percentages, sample counts, model hyperparameters, and topic shares. Because the underlying dataset and results are unavailable for review in this repository, those numerical outcomes are **withheld from the current public summary** rather than presented as independently validated results.
 
-- **Source:** Bluesky social platform (collected via [Communalytic](https://communalytic.org/))
-- **Content:** User-generated posts related to ChatGPT
-- **Scope:** Posts classified as opinion vs. fact using subjectivity scoring
-  - Sentiment analysis used **opinion posts only** (158 posts)
-  - Topic modeling used **both fact and opinion posts**
+The available Career OS verified-project list does not currently establish a matched artifact set for this particular repository. The project should not be featured as a fully reproducible analysis until its source data, notebooks, analysis output, and course context are reconciled.
 
-## Methodology
+## Needed for a recruiter-ready project
 
-### Part 1 — Data Preprocessing
-- Lowercased all text
-- Removed URLs, mentions (`@`), hashtags (`#`), punctuation, and non-ASCII characters
-- Removed stopwords
-- Tokenized and lemmatized words to base forms
-- Removed duplicates and empty entries
-- Classified posts as **fact vs. opinion** using subjectivity scores
+Recover a permissible sanitized sample or source reference, preprocessing and analysis code, model settings, output tables/figures, and an explanation of how the reported sentiment and topic results were calculated. Apply appropriate privacy and platform-data restrictions before publishing any social posts.
 
-### Part 2 — Sentiment Analysis
-Applied polarity scoring to opinion posts to classify each post as positive, negative, or neutral.
-
-| Sentiment | Percentage |
-|---|---|
-| Positive | 73.42% |
-| Negative | 20.89% |
-| Neutral | 5.70% |
-
-**Key finding:** Sentiment is strongly positive overall. Negative sentiment is driven by concerns about misinformation, AI advertising backlash, social/cultural anxiety about job displacement, and reliability issues.
-
-### Part 3 — Topic Modeling (LDA)
-Selected **k = 3 topics** based on coherence, exclusivity, and perplexity metrics.
-
-| Topic | Label | Top Keywords | Share |
-|---|---|---|---|
-| Topic 1 | News Sharing & Content Dissemination | chatgpt, use, work, like, ai, get, free | ~30% |
-| Topic 2 | User Opinions & Everyday Usage | chatgpt, search, google, think, make, answer | ~40% |
-| Topic 3 | Global & Multilingual Discussions | chatgpt, de, en, la, que, el, ai | ~30% |
-
-**Key finding:** Topic 2 (personal experience, ChatGPT vs. Google comparisons) dominates, indicating the discourse is socially driven rather than purely technical.
-
-## Business Insights
-
-1. **Leverage positive momentum** — The 73.42% positive sentiment shows users respond well to capability-focused messaging (e.g., reasoning features). Continue highlighting productivity and practical value.
-
-2. **Address the information trust gap** — Users compare ChatGPT to Google. Improving factual accuracy and adding source transparency features could reduce negative sentiment.
-
-3. **Optimize for global utility** — Topic 3's multilingual content reflects a strong international user base. Localizing features and marketing for non-English regions is a high-impact opportunity.
-
-4. **Strategic recommendation** — Strengthen trust through transparency: clearly communicate model limitations, avoid overpromising, and develop API/workflow integrations that make ChatGPT indispensable for daily work.
-
-## Tools & Techniques
-
-- **Communalytic** — Social media data collection
-- **Text Preprocessing** — Lowercasing, stopword removal, lemmatization, tokenization
-- **Sentiment Analysis** — Polarity and subjectivity scoring (TextBlob/VADER)
-- **Topic Modeling** — Latent Dirichlet Allocation (LDA)
-- **Visualization** — Bar charts for sentiment distribution and topic prevalence
-
-## Limitations
-
-The sentiment analysis subset (158 opinion posts) is relatively small and may not fully represent all perspectives on Bluesky or the broader internet.
+This page is a cautious historical project overview, not proof of a deployed data pipeline or validated analytics results.
